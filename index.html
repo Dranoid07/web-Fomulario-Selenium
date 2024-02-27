@@ -1,0 +1,146 @@
+
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Encuesta de Preferencias Musicales</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="app.js"></script>
+  </head>
+  <body>
+<style></style>
+  
+  <h1>Encuesta de Preferencias Musicales</h1>
+  
+  <form id="encuestaForm" action="procesar_encuesta.php" method="post">
+      <!-- Nombre y Apellido -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+  
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+  
+      <!-- Fecha de Nacimiento -->
+      <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+  
+      <br>
+  
+      <!-- Radio buttons -->
+      <h3>Selecciona tu género favorito</h3>
+      <label>
+          <input type="radio" name="genero" value="rock" class="pm"> Rock
+      </label>
+      <label>
+          <input type="radio" name="genero" value="pop" class="pm"> Pop
+      </label>
+      <label>
+          <input type="radio" name="genero" value="jazz" class="pm"> Jazz
+      </label>
+  
+      <label>
+          <input type="radio" name="genero" value="merengue" class="pm"> Merengue
+      </label>
+  
+      <label>
+          <input type="radio" name="genero" value="bachata" class="pm"> Bachata
+      </label>
+  
+      <label>
+          <input type="radio" name="genero" value="balada" class="pm"> Balada
+      </label>
+  
+      <label>
+          <input type="radio" name="genero" value="dembow" class="pm"> Dembow
+      </label>
+  
+      <label>
+          <input type="radio" name="genero" value="salsa" class="pm"> Salsa
+      </label>
+  
+      <br>
+  
+      <!-- Combobox -->
+      <label for="instrumento">Instrumento favorito:</label>
+      <select id="instrumento" name="instrumento">
+          <option value="guitarra">Guitarra</option>
+          <option value="piano">Piano</option>
+          <option value="saxofon">Saxofón</option>
+      </select>
+  
+      <br>
+  
+      <!-- ListBox -->
+      <label for="artistas">Artistas favoritos:</label>
+      <select id="artistas" name="artistas" multiple>
+          <option value="beatles">The Beatles</option>
+          <option value="queen">Queen</option>
+          <option value="milesdavis">Miles Davis</option>
+      </select>
+  
+      <br>
+  
+      <!-- CheckBox -->
+      <label>
+          <input type="checkbox" name="suscripcion" value="si"> Me gustaría suscribirme al boletín musical.
+      </label>
+  
+      <br>
+  
+      <!-- Campo de Texto TextArea -->
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+  
+      <br>
+  
+      <!-- Etiquetas (Label) -->
+      <label>¿Cómo descubres nueva música?</label>
+  
+      <!-- Opciones para las etiquetas -->
+      <label>
+          <input type="radio" name="descubrimiento" value="amigos"> Amigos
+      </label>
+      <label>
+          <input type="radio" name="descubrimiento" value="internet"> Internet
+      </label>
+      <label>
+          <input type="radio" name="descubrimiento" value="conciertos"> Conciertos
+      </label>
+  
+      <br>
+  
+      <!-- Audio control -->
+      <h3>Cual es la canción más escuchada del mundo</h3>
+      <audio controls>
+          <source src="Bohemian Rhapsody - Queen (Lyrics).mp3" type="audio/mp3">
+          Tu navegador no soporta el elemento de audio.
+      </audio>
+  
+      <br>
+  
+      <h3>Importancia de la música</h3>
+      <video width="320" height="240" controls>
+          <source src="Importancia de la musica.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+      </video>
+  
+      <br>
+  
+  
+      <h3>Dato Curioso</h3>
+      <label for="artista_favorito">El arbum mas vendido es de Michael Jackson
+    </label>
+      <input type="image" src="los_discos_mas_vendidos_de_la_historia_53698_orig.jpg" alt="Botón con imagen">
+  
+      <br>
+  
+      <div style="text-align: right;">
+          <input type="submit" value="Enviar">
+      </div>
+  
+  </form>
+  
+  </body>
+  </html>
+  
